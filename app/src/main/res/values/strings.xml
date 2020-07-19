@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Minesweeper</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="menu_fragment_label">Menu Fragment</string>
+    <string name="game_fragment_label">Game Fragment</string>
+    <string name="return_menu">Menu</string>
+
+    <string name="main_menu_title">Minesweeper!</string>
+    <string name="main_menu_prompt">Choose Difficulty</string>
+    <string name="diff_easy">Easy</string>
+    <string name="diff_med">Medium</string>
+    <string name="diff_hard">Hard</string>
+    <string name="restart_game">Restart</string>
+    <string name="game_time">Time: 0</string>
+    <string name="mines_left">Mines Left: 0   </string>
+</resources>

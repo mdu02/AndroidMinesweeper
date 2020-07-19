@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuFragment">
+
+    <fragment
+        android:id="@+id/MenuFragment"
+        android:name="com.mdu.minesweeper.MenuFragment"
+        android:label="@string/menu_fragment_label"
+        tools:layout="@layout/fragment_menu">
+
+        <action
+            android:id="@+id/action_MenuFragment_to_GameFragment"
+            app:destination="@id/GameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/GameFragment"
+        android:name="com.mdu.minesweeper.GameFragment"
+        android:label="@string/game_fragment_label"
+        tools:layout="@layout/fragment_game">
+
+        <action
+            android:id="@+id/action_GameFragment_to_MenuFragment"
+            app:destination="@id/MenuFragment" />
+        <argument
+            android:name="difficultyArg"
+            app:argType="integer" />
+    </fragment>
+</navigation>
